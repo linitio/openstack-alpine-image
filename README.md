@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="[https://github.com/linitio/repo_name](https://github.com/linitio/openstack-alpine-image)">
-    <img src="images/logo.svg" alt="Logo" width="105" height="150">
+    <img src="images/logo.svg" alt="Logo" width="250">
   </a>
 
 <h3 align="center">Alpine Linux image for OpenStack</h3>
