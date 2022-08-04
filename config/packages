@@ -5,3 +5,4 @@ openssh
 ssmtp
 sudo
 cloud-init
+e2fsprogs-extra
