@@ -1,0 +1,1 @@
+# openstack-alpine-image

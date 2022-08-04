@@ -1,0 +1,7 @@
+chrony
+less
+logrotate
+openssh
+ssmtp
+sudo
+cloud-init
