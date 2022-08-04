@@ -1,14 +1,15 @@
 name: CI
 
 env:
-  VERSION: 3.13
+  VERSION: ${{ github.ref_name }}
 
 on:
-  - pull_request
-  - push
+  push:
+    tags:
+    - '*'
 
 jobs:
-  test:
+  build-image:
     runs-on: ubuntu-latest
     steps:
       - name: Install prerequisites
