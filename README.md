@@ -44,7 +44,7 @@ This image is updated when Alpine Linux team released a new version of the OS [h
 ### How to use this image
 
 1. Set your OpenStack environement variables
-2. Download the latest image from release page
+2. Download the latest image from [release page](https://github.com/linitio/openstack-alpine-image/releases "Release page")
 3. Upload image to your OpenStack environment
    ```sh
    openstack image create --disk-format=qcow2 --container-format=bare --file alpine-<VERSION>-x86_64.qcow2  'Alpine <VERSION>'
