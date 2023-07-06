@@ -7,19 +7,21 @@ on:
   push:
     tags:
     - '*'
-
+    
+  workflow_dispatch:
 
 jobs:
-  build-image:
+  build:
     runs-on: [self-hosted, Linux]
-    steps:
-      - name: Install prerequisites
-        run: |
-          sudo apt-get update
-          sudo apt-get install qemu-utils libguestfs-tools
-      - uses: actions/checkout@v2
+    
+    steps: 
+      - uses: actions/checkout@v3
         with:
           submodules: 'true'
+      - name: Install prerequisites
+        run: |
+          sudo dnf update -y
+          sudo dnf install -y libguestfs-tools libguestfs-tools-c   
 
       - name: Build base image
         run: |
