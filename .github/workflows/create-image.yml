@@ -8,9 +8,10 @@ on:
     tags:
     - '*'
 
+
 jobs:
   build-image:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux]
     steps:
       - name: Install prerequisites
         run: |
